@@ -67,7 +67,7 @@ class GameObject(ABC):
 
 
 """
-Объекты игры:
+Конкретные Объекты игры:
 Герой
 Враг
 Бонус
@@ -97,6 +97,7 @@ class Hero(GameObject):
         """
         Описание объекта
         """
+        return f"{self}"
 
 
     def run(self, direction: Movement):
